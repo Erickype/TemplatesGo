@@ -11,7 +11,7 @@ func main() {
 
 	person := &models.Person{Nombre: "Erick", Edad: 22}
 
-	template, err := template.New("greeting").Parse("Hola, mi nombre es {{.Nombre}} y tengo {{.Edad}} años.")
+	template, err := template.New("greetings.txt").ParseFiles("templates/greetings.txt")
 
 	if err != nil {
 		panic(err)
