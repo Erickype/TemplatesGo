@@ -15,7 +15,7 @@
     <p>Mis pasatiempos son: </p>
     <ul>
         {{range $index, $hobbie := .Hobbies}}
-        {{increment $index}}. {{$hobbie}}
+        <li>{{increment $index}}. {{$hobbie}}</li>
         {{end}}
     </ul>
     {{end}}
