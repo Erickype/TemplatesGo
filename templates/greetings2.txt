@@ -1,0 +1,11 @@
+Hola!
+Mi nombre es {{.Nombre}} y tengo {{.Edad}} años.
+
+{{if gt (len .Hobbies) 0}}
+
+    Mis pasatiempos son: 
+    {{range $index, $hobbie := .Hobbies}}
+    {{increment $index}}. {{$hobbie}}
+    {{end}}
+
+{{end}}
