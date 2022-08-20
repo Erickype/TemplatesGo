@@ -9,5 +9,5 @@ func main() {
 
 	person := &models.Person{Nombre: "Erick", Edad: 22, Hobbies: []string{"Leer", "Caminar", "Escribir"}}
 
-	templates.LoadTemplate("greetings2.txt", person)
+	templates.LoadTemplate("index.html", person)
 }
