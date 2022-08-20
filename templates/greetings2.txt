@@ -3,5 +3,5 @@ Mi nombre es {{.Nombre}} y tengo {{.Edad}} años.
 
 Mis pasatiempos son: 
 {{range $index, $hobbie := .Hobbies}}
-{{$index}}. {{$hobbie}}
+{{increment $index}}. {{$hobbie}}
 {{end}}
