@@ -2,6 +2,6 @@ Hola!
 Mi nombre es {{.Nombre}} y tengo {{.Edad}} años.
 
 Mis pasatiempos son: 
-{{range .Hobbies}}
-{{.}}
+{{range $index, $hobbie := .Hobbies}}
+{{$index}}. {{$hobbie}}
 {{end}}
